@@ -105,8 +105,10 @@ window.onload = function () {
         let currentScrollPos = window.pageYOffset;
         if (prevScrollpos > currentScrollPos) {
             document.querySelector(".mobile-menu-block").style.top = "0";
+            document.querySelector(".header").style.top = "0";
         } else {
             document.querySelector(".mobile-menu-block").style.top = "-70px";
+            document.querySelector(".header").style.top = "-100px";
         }
         prevScrollpos = currentScrollPos;
     }
